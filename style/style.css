@@ -1,0 +1,483 @@
+nav {
+  background-color: #c895a1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#subscribeButton {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  margin: 20px;
+  font-size: 18px;
+  color: ivory;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/*:root {
+  outline: 1px;
+}*/
+body {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Philly Sans";
+  font-size: 50px;
+}
+
+.articleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article1,
+.article2 {
+  background-color: #797676;
+  width: 49%;
+  height: 40vw;
+}
+
+.article2 {
+  overflow-y: auto;
+}
+
+.imageBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 4vw;
+}
+
+.picArticle {
+  width: 50%;
+}
+
+.textArticle {
+  text-align: justify;
+  color: ivory;
+  margin: 6vw;
+  font-size: 19px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+#buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#postsButton {
+  background-color: #ffb576;
+  border-radius: 15px;
+  width: 20%;
+  text-align: center;
+  border-style: solid;
+  margin-bottom: 2vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+  font-family: "Philly Sans";
+  src: url("font/phillysans-regular-webfont.woff2") format("woff2"), url("font/phillysans-regular-webfont.woff") format("woff");
+}
+footer {
+  background-color: #c895a1;
+  height: 5vw;
+  color: ivory;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+  padding: 10px;
+  margin: 15px;
+  float: right;
+}
+
+.fa-instagram {
+  background: #f85353;
+  color: white;
+  padding: 10px;
+  margin: 15px;
+  float: right;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+  padding: 10px;
+  margin: 15px;
+  float: right;
+}
+
+#footerText {
+  float: left;
+  margin: 20px;
+}
+
+.imageOverlay {
+  width: 420px;
+}
+
+.blogImage {
+  width: 27vw;
+  height: 25vw;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.blogImage:hover {
+  opacity: 0.7;
+}
+
+.smallPostWrapper {
+  margin: 2vw;
+}
+
+.allSmallWrappers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+  overflow: auto;
+}
+
+.overlayText {
+  width: 80%;
+  font-size: 20px;
+  color: white;
+  transform: translate(12%, -15%);
+  text-align: justify;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.mySlides {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%, -45%);
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: ivory;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.closeCursor {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.more {
+  display: none;
+}
+
+.moreBtn {
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .textArticle {
+    font-size: 15px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+
+  .footerText {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  #text {
+    font-size: 12px;
+    margin-top: 20px;
+    width: 85%;
+  }
+}
+@media (max-width: 768px) {
+  .articleWrapper {
+    flex-direction: column;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -20px;
+  }
+
+  li {
+    margin-top: -10px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .textArticle {
+    font-size: 17px;
+  }
+
+  .allSmallWrappers {
+    display: inline-grid;
+  }
+
+  #postsButton {
+    font-size: 12px;
+  }
+
+  .blogImage {
+    width: 36vw;
+    height: 34vw;
+  }
+
+  .imageOverlay {
+    width: 250px;
+  }
+
+  .closeCursor {
+    font-size: 40px;
+  }
+
+  .prev,
+.next {
+    font-size: 30px;
+  }
+
+  .overlayText {
+    font-size: 14px;
+    width: 90%;
+    margin-left: -20px;
+  }
+
+  .moreBtn {
+    font-size: 10px;
+  }
+
+  p {
+    margin: 10px;
+  }
+
+  #text {
+    font-size: 17px;
+  }
+
+  body #aboutMeText {
+    font-size: 13px;
+    width: 87%;
+    color: black;
+    position: relative;
+  }
+
+  body #contactBtn {
+    font-size: 15px;
+    position: relative;
+  }
+
+  body #bigPicture {
+    opacity: 1;
+  }
+
+  #textSection {
+    font-size: 12px;
+  }
+
+  .inputForm {
+    width: 80%;
+    margin-top: 5px;
+    border: 2px solid;
+  }
+
+  body .fa {
+    font-size: 10px;
+    margin: 5px;
+  }
+
+  footer {
+    height: 40px;
+  }
+
+  #footerText {
+    font-size: 15px;
+  }
+}
+@media (min-width: 769px) {
+  body #aboutMeText {
+    font-size: 20px;
+    top: 17%;
+    width: 50%;
+    color: ivory;
+  }
+
+  body #contactBtn {
+    font-size: 30px;
+    top: 45%;
+  }
+
+  body #bigPicture {
+    opacity: 0.8;
+  }
+}
+@media (min-width: 1024px) {
+  body #aboutMeText {
+    font-size: 20px;
+    top: 35%;
+    width: 60%;
+    color: ivory;
+  }
+
+  body #contactBtn {
+    font-size: 25px;
+    top: 90%;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1280px) {
+  body #aboutMeText {
+    top: 38%;
+    left: 3%;
+    width: 50%;
+  }
+
+  body #contactBtn {
+    top: 95%;
+    left: 3%;
+  }
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 3;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  width: 30%;
+  border-radius: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#bigPicture {
+  margin-top: 5px;
+  opacity: 0.7;
+  width: 100%;
+  height: 50%;
+}
+
+#contactBtn {
+  position: absolute;
+  top: 150%;
+  left: 3%;
+  font-family: "Philly Sans";
+  font-size: 25px;
+}
+
+#aboutMeText {
+  position: absolute;
+  top: 38%;
+  left: 3%;
+  width: 35%;
+  text-align: justify;
+  color: ivory;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.paraBox {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

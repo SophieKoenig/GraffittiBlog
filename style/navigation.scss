@@ -1,0 +1,30 @@
+nav {
+  background-color: #c895a1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#subscribeButton {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+li {
+  margin: 20px;
+  font-size: 18px;
+  color: ivory;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Latest news about street art" />
+    <meta name="keywords" content="Graffiti, Street Art, Culture" />
+    <meta name="author" content="Sophie König" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="../script/script.js"></script>
+    <title>All Posts</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html"
+          ><img
+            src="../images/wall-joseph-gonzalez-unsplash.jpg"
+            alt="wall with a lot of stickers"
+            style="width: 80px; height: 60px"
+        /></a>
+        <!-- <a href="#textSection"
+          ><button type="button" id="subscribeButton">SUBSCRIBE</button></a
+        > -->
+      </div>
+      <div class="navList">
+        <ul>
+          <a href="blogPosts.html"><li>All Blogposts</li></a>
+          <a href="aboutContact.html"><li>About/Contact</li></a>
+        </ul>
+      </div>
+    </nav>
+    <h1>PAINT THE CITY</h1>
+    <main>
+      <div class="allSmallWrappers">
+        <div class="smallPostWrapper">
+          <article class="allPosts">
+            <input
+              class="blogImage"
+              onclick="on(); currentSlide(1)"
+              type="image"
+              src="../images/wall-victor-behrens-unsplash.jpg"
+              alt="wall of stickers"
+            />
+          </article>
+        </div>
+        <div class="smallPostWrapper">
+          <article class="allPosts">
+            <input
+              class="blogImage"
+              onclick="on(); currentSlide(2)"
+              type="image"
+              src="../images/wall-george-pagan-unsplash.jpg"
+              alt="wall of stickers"
+            />
+          </article>
+        </div>
+        <div class="smallPostWrapper">
+          <article class="allPosts">
+            <input
+              class="blogImage"
+              onclick="on(); currentSlide(3)"
+              type="image"
+              src="../images/wall-jon-tyson-unsplash.jpg"
+              alt="wall of stickers"
+            />
+          </article>
+        </div>
+        <!-- <aside class="sidebar">
+          <div class="divSidebar">
+            <h5>categories</h5>
+            <p>Artists</p>
+            <p>Berlin</p>
+            <p>Books</p>
+            <p>Graffiti News</p>
+            <p>New York</p>
+            <p>Snösätra</p>
+          </div>
+        </aside> -->
+      </div>
+      <div class="allSmallWrappers">
+        <div class="smallPostWrapper">
+          <article class="allPosts">
+            <input
+              class="blogImage"
+              onclick="on(); currentSlide(4)"
+              type="image"
+              src="../images/wall-left-mahdis-mousavi-unsplash.jpg"
+              alt=""
+            />
+          </article>
+        </div>
+        <div class="smallPostWrapper">
+          <article class="allPosts">
+            <input
+              class="blogImage"
+              onclick="on(); currentSlide(5)"
+              type="image"
+              src="../images/wall-sunyu-kim-unsplash.jpg"
+              alt=""
+            />
+          </article>
+        </div>
+        <div class="smallPostWrapper">
+          <article class="allPosts">
+            <input
+              class="blogImage"
+              onclick="on(); currentSlide(6)"
+              type="image"
+              src="../images/wall-left-tammy-chan-unsplash.jpg"
+              alt=""
+            />
+          </article>
+        </div>
+      </div>
+    </main>
+    <br />
+    <div id="overlay">
+      <span class="closeCursor" onclick="off()">&times;</span>
+      <div class="overlayContent">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <!-- &# is a character reference sheet "adress" -->
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- number in parentheses is number of images to move forward  -->
+        <div class="mySlides">
+          <img
+            class="imageOverlay"
+            src="../images/wall-victor-behrens-unsplash.jpg"
+            alt=""
+          />
+
+          <!-- do I need an alternative text here again? -->
+          <p class="overlayText">
+            Lorem ipsum dolor <span class="dots">...</span
+            ><span class="more"
+              >sit amet consectetur adipisicing elit. Voluptatem, voluptatibus
+              dolorem explicabo minus vel repudiandae aliquid maiores asperiores
+              excepturi est sunt libero cum odit porro dolore laborum tempora
+              nisi facere. Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Voluptate provident repellendus sed quaerat aspernatur
+              molestias officiis sunt accusamus doloremque,</span
+            >
+            <button onclick="moreTextBtn(1)" class="moreBtn">Read more</button>
+          </p>
+        </div>
+        <div class="mySlides">
+          <img
+            class="imageOverlay"
+            src="../images/wall-george-pagan-unsplash.jpg"
+            alt=""
+          />
+          <!-- width="550" -->
+          <p class="overlayText">
+            Lorem ipsum dolor <span class="dots">...</span
+            ><span class="more"
+              >sit amet consectetur adipisicing elit. Voluptatem, voluptatibus
+              dolorem explicabo minus vel repudiandae aliquid maiores asperiores
+              excepturi est sunt libero cum odit porro dolore laborum tempora
+              nisi facere. Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Voluptate provident repellendus sed quaerat aspernatur
+              molestias officiis sunt accusamus doloremque,</span
+            >
+            <button onclick="moreTextBtn(2)" class="moreBtn">Read more</button>
+          </p>
+        </div>
+        <div class="mySlides">
+          <img
+            class="imageOverlay"
+            src="../images/wall-jon-tyson-unsplash.jpg"
+            alt=""
+          />
+          <!-- width="550" -->
+          <p class="overlayText">
+            Lorem ipsum dolor <span class="dots">...</span
+            ><span class="more"
+              >sit amet consectetur adipisicing elit. Voluptatem, voluptatibus
+              dolorem explicabo minus vel repudiandae aliquid maiores asperiores
+              excepturi est sunt libero cum odit porro dolore laborum tempora
+              nisi facere. Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Voluptate provident repellendus sed quaerat aspernatur
+              molestias officiis sunt accusamus doloremque,</span
+            >
+            <button onclick="moreTextBtn(3)" class="moreBtn">Read more</button>
+          </p>
+        </div>
+        <div class="mySlides">
+          <img
+            class="imageOverlay"
+            src="../images/wall-left-mahdis-mousavi-unsplash.jpg"
+            alt=""
+          />
+          <p class="overlayText">
+            Lorem ipsum dolor <span class="dots">...</span
+            ><span class="more"
+              >sit amet consectetur adipisicing elit. Voluptatem, voluptatibus
+              dolorem explicabo minus vel repudiandae aliquid maiores asperiores
+              excepturi est sunt libero cum odit porro dolore laborum tempora
+              nisi facere. Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Voluptate provident repellendus sed quaerat aspernatur
+              molestias officiis sunt accusamus doloremque,</span
+            >
+            <button onclick="moreTextBtn(4)" class="moreBtn">Read more</button>
+          </p>
+        </div>
+        <div class="mySlides">
+          <img
+            class="imageOverlay"
+            src="../images/wall-sunyu-kim-unsplash.jpg"
+            alt=""
+          />
+          <p class="overlayText">
+            Lorem ipsum dolor <span class="dots">...</span
+            ><span class="more"
+              >sit amet consectetur adipisicing elit. Voluptatem, voluptatibus
+              dolorem explicabo minus vel repudiandae aliquid maiores asperiores
+              excepturi est sunt libero cum odit porro dolore laborum tempora
+              nisi facere. Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Voluptate provident repellendus sed quaerat aspernatur
+              molestias officiis sunt accusamus doloremque,</span
+            >
+            <button onclick="moreTextBtn(5)" class="moreBtn">Read more</button>
+          </p>
+        </div>
+        <div class="mySlides">
+          <img
+            class="imageOverlay"
+            src="../images/wall-left-tammy-chan-unsplash.jpg"
+            alt=""
+          />
+          <p class="overlayText">
+            Lorem ipsum dolor <span class="dots">...</span
+            ><span class="more"
+              >sit amet consectetur adipisicing elit. Voluptatem, voluptatibus
+              dolorem explicabo minus vel repudiandae aliquid maiores asperiores
+              excepturi est sunt libero cum odit porro dolore laborum tempora
+              nisi facere. Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Voluptate provident repellendus sed quaerat aspernatur
+              molestias officiis sunt accusamus doloremque,</span
+            >
+            <button onclick="moreTextBtn(6)" class="moreBtn">Read more</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <div style="padding: 20px">
+      <p>Overlay with Text</p>
+      <button onclick="on()">Turn on overlay effect</button>
+    </div>  -->
+    <footer>
+      <div class="footer">
+        <p id="footerText">Copyright 2021</p>
+
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://www.twitter.com/"
+          target="_blank"
+          class="fa fa-twitter"
+        ></a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          class="fa fa-instagram"
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="../script/script.js"></script>
+    <title>About/Contact</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html"
+          ><img
+            src="../images/wall-joseph-gonzalez-unsplash.jpg"
+            alt="wall with a lot of stickers"
+            style="width: 75px; height: 60px"
+        /></a>
+        <!-- <a href="#textSection"
+          ><button type="button" id="subscribeButton">SUBSCRIBE</button></a
+        > -->
+      </div>
+      <div class="navList">
+        <ul>
+          <a href="blogPosts.html"><li>All Blogposts</li></a>
+          <a href="aboutContact.html"><li>About/Contact</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <h1>PAINT THE CITY</h1>
+
+    <img id="bigPicture" src="../images/martin-zaenkert-unsplash.jpg" alt="" />
+
+    <p id="aboutMeText">
+      Love Graffitti tuff tuff Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Rerum ab iste, a quidem aut alias sed ipsam quisquam
+      vitae nostrum minima iure quam voluptatum magnam nulla sequi porro, quod
+      doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Saepe, laboriosam minima iusto ipsa voluptatem, reprehenderit perferendis
+      ducimus qui deleniti et minus autem obcaecati modi quod vel pariatur non!
+      Facilis, nam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Magnam, laudantium aut quis voluptate ratione atque at aperiam dolor
+      aliquam labore maxime illum ullam quidem eligendi laboriosam nisi
+      deleniti? Commodi, autem.
+    </p>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="contactBtn" onclick="contactOn()">Contact Me</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="contactOff()">&times;</span>
+        <!-- <p>Some text in the Modal..</p> -->
+        <div class="paraBox">
+          <h3 id="textSection">JOIN OUR NEWSLETTER</h3>
+          <form href="sophie.konig@hyperisland.se">
+            <label for="fname">First name:</label><br />
+            <input class="inputForm" type="text" id="fname" name="fname" /><br />
+            <label for="email">Email:</label><br />
+            <input class="inputForm" type="email" id="email" name="email" /><br /><br />
+            <input class="inputForm" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <footer>
+      <div class="footer">
+        <p id="footerText">Copyright 2021</p>
+
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://www.twitter.com/"
+          target="_blank"
+          class="fa fa-twitter"
+        ></a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          class="fa fa-instagram"
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

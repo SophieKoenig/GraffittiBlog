@@ -1,0 +1,62 @@
+/*:root {
+  outline: 1px;
+}*/
+body {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Philly Sans";
+  font-size: 50px;
+}
+.articleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.article1,
+.article2 {
+  background-color: rgb(121, 118, 118);
+  width: 49%;
+  height: 40vw;
+  //border-radius: 20px;
+}
+.article2 {
+  overflow-y: auto; //scrollbar when needed (mainly in responsive)
+}
+.imageBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 4vw;
+}
+.picArticle {
+  width: 50%;
+}
+.textArticle {
+  text-align: justify;
+  color: ivory;
+  margin: 6vw;
+  font-size: 19px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#postsButton {
+  background-color: #ffb576;
+  border-radius: 15px;
+  width: 20%;
+  text-align: center;
+  border-style: solid;
+  margin-bottom: 2vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@font-face {
+  font-family: "Philly Sans";
+  src: url("font/phillysans-regular-webfont.woff2") format("woff2"),
+    url("font/phillysans-regular-webfont.woff") format("woff");
+}
