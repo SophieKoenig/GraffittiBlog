@@ -1,16 +1,16 @@
 @media (max-width: 600px) {
-  .textArticle {
-    font-size: 15px;
-  }
+  // .textArticle {
+  //   font-size: 15px;
+  // }
   li {
     font-size: 14px;
   }
   .footerText {
-    font-size: 14px;
+    // font-size: 14px;
     margin-top: 30px;
   }
   #text {
-    font-size: 12px;
+    // font-size: 12px;
     margin-top: 20px;
     width: 85%;
   }
@@ -84,13 +84,13 @@
   }
   //without "body" the media-queries gets overwritten
   body #aboutMeText {
-    font-size: 13px;
-    width: 87%;
+    font-size: 8vw;
+    width: 80%;
     color: black;
     position: relative;
   }
   body #contactBtn {
-    font-size: 15px;
+    font-size: 10vw;
     position: relative;
   }
   body #bigPicture {
@@ -116,41 +116,40 @@
     font-size: 15px;
   }
 }
-@media (min-width: 769px) {
-  body #aboutMeText {
-    font-size: 20px;
-    top: 17%;
-    width: 50%;
-    color: ivory;
-  }
-  body #contactBtn {
-    font-size: 30px;
-    top: 45%;
-  }
-  body #bigPicture {
-    opacity: 0.8;
-  }
-}
-@media (min-width: 1024px) {
-  body #aboutMeText {
-    font-size: 20px;
-    top: 35%;
-    width: 60%;
-    color: ivory;
-  }
-  body #contactBtn {
-    font-size: 25px;
-    top: 90%;
-  }
-  @media (min-width: 1280px) {
-    body #aboutMeText {
-      top: 38%;
-      left: 3%;
-      width: 50%;
-    }
-    body #contactBtn {
-      top: 95%;
-      left: 3%;
-    }
-  }
-}
+// @media (min-width: 769px) {
+//   #aboutMeText {
+// //     font-size: 20px;
+//     top: 17%;
+//     width: 50%;
+//     //color: ivory;
+//   }
+//   body #contactBtn {
+//     font-size: 30px;
+//     top: 45%;
+//   }
+//   body #bigPicture {
+//     opacity: 0.8;
+//   }
+// }
+// @media (min-width: 1024px) {
+//   body #aboutMeText {
+//     font-size: 20px;
+//     top: 35%;
+//     width: 60%;
+//     color: ivory;
+//   }
+//   body #contactBtn {
+//     font-size: 25px;
+//     top: 90%;
+//   }
+//   @media (min-width: 1280px) {
+//     body #aboutMeText {
+//       top: 40%;
+//       left: 15%;
+//       width: 38%;
+//     }
+//     body #contactBtn {
+//       top: 90%;
+//       left: 15%;
+//     }
+//   }

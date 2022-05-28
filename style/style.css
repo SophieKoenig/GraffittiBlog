@@ -3,6 +3,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 90%;
+  margin-left: 4vw;
 }
 
 .logo {
@@ -28,7 +30,7 @@ ul {
 
 li {
   margin: 20px;
-  font-size: 18px;
+  font-size: 1.6vw;
   color: ivory;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -36,7 +38,7 @@ li {
 /*:root {
   outline: 1px;
 }*/
-body {
+* {
   text-align: center;
 }
 
@@ -51,13 +53,15 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 70%;
+  margin-left: 13vw;
 }
 
 .article1,
 .article2 {
   background-color: #797676;
   width: 49%;
-  height: 40vw;
+  height: 45vh;
 }
 
 .article2 {
@@ -67,18 +71,18 @@ h1 {
 .imageBox {
   display: flex;
   justify-content: center;
-  margin-top: 4vw;
+  margin-top: 3.5vh;
 }
 
 .picArticle {
-  width: 50%;
+  width: 38%;
 }
 
 .textArticle {
   text-align: justify;
   color: ivory;
-  margin: 6vw;
-  font-size: 19px;
+  margin: 2.9vw;
+  font-size: 1.2vw;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
@@ -107,6 +111,8 @@ footer {
   height: 5vw;
   color: ivory;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  width: 90%;
+  margin-left: 4vw;
 }
 
 .fa-facebook {
@@ -143,8 +149,8 @@ footer {
 }
 
 .blogImage {
-  width: 27vw;
-  height: 25vw;
+  width: 20vw;
+  height: 45vh;
   border-radius: 25px;
   object-fit: cover;
 }
@@ -235,21 +241,15 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .textArticle {
-    font-size: 15px;
-  }
-
   li {
     font-size: 14px;
   }
 
   .footerText {
-    font-size: 14px;
     margin-top: 30px;
   }
 
   #text {
-    font-size: 12px;
     margin-top: 20px;
     width: 85%;
   }
@@ -330,14 +330,14 @@ footer {
   }
 
   body #aboutMeText {
-    font-size: 13px;
-    width: 87%;
+    font-size: 8vw;
+    width: 80%;
     color: black;
     position: relative;
   }
 
   body #contactBtn {
-    font-size: 15px;
+    font-size: 10vw;
     position: relative;
   }
 
@@ -366,48 +366,6 @@ footer {
 
   #footerText {
     font-size: 15px;
-  }
-}
-@media (min-width: 769px) {
-  body #aboutMeText {
-    font-size: 20px;
-    top: 17%;
-    width: 50%;
-    color: ivory;
-  }
-
-  body #contactBtn {
-    font-size: 30px;
-    top: 45%;
-  }
-
-  body #bigPicture {
-    opacity: 0.8;
-  }
-}
-@media (min-width: 1024px) {
-  body #aboutMeText {
-    font-size: 20px;
-    top: 35%;
-    width: 60%;
-    color: ivory;
-  }
-
-  body #contactBtn {
-    font-size: 25px;
-    top: 90%;
-  }
-}
-@media (min-width: 1024px) and (min-width: 1280px) {
-  body #aboutMeText {
-    top: 38%;
-    left: 3%;
-    width: 50%;
-  }
-
-  body #contactBtn {
-    top: 95%;
-    left: 3%;
   }
 }
 /* The Modal (background) */
@@ -454,23 +412,24 @@ footer {
 #bigPicture {
   margin-top: 5px;
   opacity: 0.7;
-  width: 100%;
-  height: 50%;
+  width: 75%;
+  height: 40%;
 }
 
 #contactBtn {
   position: absolute;
-  top: 150%;
-  left: 3%;
+  top: 80vh;
+  left: 15vw;
   font-family: "Philly Sans";
-  font-size: 25px;
+  font-size: 1.5vw;
 }
 
 #aboutMeText {
   position: absolute;
-  top: 38%;
-  left: 3%;
-  width: 35%;
+  font-size: 1.5vw;
+  top: 38vh;
+  left: 15vw;
+  width: 40%;
   text-align: justify;
   color: ivory;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
