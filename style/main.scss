@@ -1,7 +1,7 @@
 /*:root {
   outline: 1px;
 }*/
-body {
+* {
   text-align: center;
 }
 h1 {
@@ -14,12 +14,14 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 70%;
+  margin-left: 13vw;
 }
 .article1,
 .article2 {
   background-color: rgb(121, 118, 118);
   width: 49%;
-  height: 40vw;
+  height: 45vh;
   //border-radius: 20px;
 }
 .article2 {
@@ -28,16 +30,16 @@ h1 {
 .imageBox {
   display: flex;
   justify-content: center;
-  margin-top: 4vw;
+  margin-top: 3.5vh;
 }
 .picArticle {
-  width: 50%;
+  width: 38%;
 }
 .textArticle {
   text-align: justify;
   color: ivory;
-  margin: 6vw;
-  font-size: 19px;
+  margin: 2.9vw;
+  font-size: 1.2vw;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
