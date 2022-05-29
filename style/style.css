@@ -296,6 +296,10 @@ footer {
     display: inline-grid;
   }
 
+  .article1 {
+    height: 23vh;
+  }
+
   #postsButton {
     font-size: 12px;
   }
